@@ -7,6 +7,25 @@
     <title>Todo List</title>
 </head>
 <body>
-    
+    <main id="app" class="container">
+        <h1>ToDo List</h1>
+        <input type="text">
+        <input type="submit">
+        <ol>
+            <li></li>
+        </ol>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script>
+        new Vue({
+            el: '#app',
+
+            data: {
+                todo: '',
+                todos: [],
+                selectedTodo: null
+            }
+        })
+    </script>
 </body>
 </html>
