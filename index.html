@@ -7,8 +7,12 @@
     <title>Todo List</title>
     <style>
       .container {
-        max-width: 50%;
-        margin: 0 auto; 
+        width: 50%;
+        margin: 0 auto;
+        float: left;
+      }
+      embed {
+        float: right;
       }
     </style>
   </head>
@@ -24,6 +28,9 @@
         </li>
       </ol>
     </main>
+    <aside class="embed">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IfChWhl_i-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </aside>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script>
       new Vue({
